@@ -63,7 +63,7 @@ static wifi_config_t sta_config;
 static wifi_config_t ap_config;
 
 /* FreeRTOS event group to signal when we are connected & ready to make a request */
-static EventGroupHandle_t wifi_event_group;
+EventGroupHandle_t wifi_event_group;
 
 /* The event group allows multiple bits for each event,
    but we only care about one event - are we connected
